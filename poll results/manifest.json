@@ -1,0 +1,20 @@
+{
+  "name": "poll results",
+  "version": "0.6",
+  "manifest_version": 2,
+  "description": "save poll results",
+  "author" : "soorya",  
+  "browser_action": {
+    "name": "poll results",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["activeTab","storage","downloads"],
+
+  "content_scripts": [ {
+    "js": [ "jquery.js", "content.js" ],
+    "matches": [ "<all_urls>"]
+  }]
+}

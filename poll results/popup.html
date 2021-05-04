@@ -1,0 +1,62 @@
+<html>
+<head>
+	<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid blue;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
+
+body {
+    min-width:400px;
+}
+
+button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+		<button id ="but">
+		import
+	</button>
+	<button id ="save">
+		save
+	</button>
+	<button id ="clear">
+		clear
+	</button>
+  <input type="file" id="answerfile" name="answerkey">
+   <button id ="evaluate">
+    evaluate
+  </button>
+	<div id ="res"></div> 
+	<script src="popup.js"></script>
+</body>
+</html>
